@@ -1,1 +1,3 @@
 # weather-forecast
+
+The code loads a CSV file into a Pandas dataframe and performs various data cleaning and preprocessing tasks, including handling missing values, converting date columns to datetime format, and creating new features from the date column. It then splits the preprocessed dataframe into training and testing sets and trains an ARIMA model on the 'T' column of the training set to forecast future temperatures. The code also uses the Prophet library to create a second model that forecasts temperature values based on the 'date' and 'T' columns, and plots the actual and predicted values for both models.
